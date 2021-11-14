@@ -1,0 +1,190 @@
+body {
+
+    /* Les parametre du fond */
+    height: 100%; /*la Hauteur*/
+    width: 100%; /* la largeur*/
+    margin: 0; /* la marge ou l'écart*/
+    font-family: Verdana; /* La police*/
+    background-image: url("fond.gif")
+}
+
+/* Parametre du "container" = la route*/  
+
+#container{
+    position: relative; /*décalage*/
+    height: 90vh; /*la Hauteur*/
+    width: 25%; /* la largeur*/
+    left: 35%; /*marge a gauche*/
+    margin-top: 20px;; /*haut de la marge*/
+    background-color: #292929; /* couleur de la route*/
+    overflow: hidden; /*débordement*/
+}
+/* Parametre et positionement "line" = ligne des lignes*/
+.line{
+    position: absolute; /* décalage*/
+    height: 150px; /*la Hauteur*/
+    width: 4%; /* la largeur*/
+    margin-left: 48%; /*la marge a gauche*/
+    background-color: rgba(255,255,255,0.5); /* couleur*/
+}
+
+#line_1{
+    top: -150px;
+}
+#line_2{
+    top: 150px;
+}
+#line_3{
+    top: 450px;
+}
+
+/* Toujours avec le même principe, parametre "car" = voitures, 
+positionnement des vitres, roues et autres*/ 
+
+.car{
+    position: absolute;
+    height: 60px;
+    width: 40px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 8px 0px black;
+}
+#car{
+    bottom: 8%;
+    left: 60%;
+    background-color: #ffdf5a;
+}
+.f_glass{
+    position: absolute;
+    height: 20%;
+    width: 60%;
+    margin-left: 20%;
+    top: 15%;
+    border-radius: 0px 0px 5px 5px;
+    background-color: #484848;
+}
+.b_glass{
+    position: absolute;
+    height: 20%;
+    width: 60%;
+    margin-left: 20%;
+    bottom: 15%;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #484848;
+}
+.f_light_l{
+    position: absolute;
+    height: 10%;
+    width: 20%;
+    margin-left: 10%;
+    top: -6%;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #efefef;
+}
+.f_light_r{
+    position: absolute;
+    height: 10%;
+    width: 20%;
+    margin-left: 70%;
+    top: -6%;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #efefef;
+}
+.f_tyre_l{
+    position: absolute;
+    height: 20%;
+    width: 10%;
+    background-color: grey;
+    top: 20%;
+    left: -10%;
+    border-radius: 5px 0px 0px 5px;
+}
+.f_tyre_r{
+    position: absolute;
+    height: 20%;
+    width: 10%;
+    background-color: grey;
+    top: 20%;
+    left: 100%;
+    border-radius: 0px 5px 5px 0px;
+}
+.b_tyre_l{
+    position: absolute;
+    height: 20%;
+    width: 10%;
+    background-color: grey;
+    top: 70%;
+    left: -10%;
+    border-radius: 5px 0px 0px 5px;
+}
+.b_tyre_r{
+    position: absolute;
+    height: 20%;
+    width: 10%;
+    background-color: grey;
+    top: 70%;
+    left: 100%;
+    border-radius: 0px 5px 5px 0px;
+}
+#car_1{
+    top: -100px;
+    left: 60%;
+    background-color: #26c5ff;
+}
+#car_2{
+    top: -200px;
+    left: 40%;
+    background-color: #26c5ff;
+}
+#car_3{
+    top: -350px;
+    left: 50%;
+    background-color: #26c5ff;
+}
+
+/* Parametre button restart = rejouer*/
+
+#restart_div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #292929;
+    color: white;
+    font-family: sans-serif;
+    font-size: 40px;
+    text-align: center;
+    display: none;
+}
+
+#restart {
+    border: none;
+    padding: 25px;
+    color: white;
+    background-color: #8a64ff;
+    font-size: 30px;
+    margin-top: 30%;
+}
+
+/* Parametre button div "score" sur le côté*/
+#score_div{
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 10%;
+    font-size: 35px;
+    background-color: white;
+    color: #454545;
+    padding: 10px;
+    box-shadow: 4px 4px 0px 1px #808080;
+}
+/* Parametre de l'aide at the top on the side*/
+#help{
+    color: #FEFEFE;
+	text-align: center;
+    background-color: #8a64ff;
+}
+
+#Music{
+    position: absolute;
+    color: white;
+    margin-top: 25%;
+    background-color: black;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TAXI</title>
+    <link href="style.css" rel="stylesheet" /> </head>
+
+<body>
+
+<!-- Aide a l'utilisation-->
+
+    <div id="help">
+        <p> Pour controler le TAXI utilisez les touches (Gauche, Droite, Haut, Bas) de votre clavier.</p>
+    </div>
+
+<!--Music-->
+
+<div id="Music">
+      <h3>Music: <audio src="Carpenter Brut-Hang.mp3"controls autoplay loop></audio></h3>
+                
+</div>
+
+    <!-- durée / score d'identification-->
+    <div id="score_div">
+        Score: <span id="score">0</span>
+    </div>
+
+    <!-- a l'interieur du "container" il y a les ligne de code de la route -->
+
+    <div id="container">
+
+        <!-- les 3 lignes du centre presente sur la route, elles se repeterons-->
+
+        <div id="line_1" class="line"></div>
+        <div id="line_2" class="line"></div>
+        <div id="line_3" class="line"></div>
+
+        <!--construction de la voiture jaune/ vitre avant, vitre arrière, les feux, les roues -->
+
+        <div id="car"    class="car">
+
+            <div class="f_glass"></div>
+            <div class="b_glass"></div>
+            <div class="f_light_l"></div>
+            <div class="f_light_r"></div>
+            <div class="f_tyre_l"></div>
+            <div class="f_tyre_r"></div>
+            <div class="b_tyre_l"></div>
+            <div class="b_tyre_r"></div>
+        </div>
+
+<!-- Les trois blocks suivant sont les ceux qui corresponds aà la conscruction des voitures adverses " les voiture grises"-->
+
+
+<!--block 1 --> 
+
+        <div id="car_1" class="car">
+            <div class="f_glass"></div>
+            <div class="b_glass"></div>
+            <div class="f_light_l"></div>
+            <div class="f_light_r"></div>
+            <div class="f_tyre_l"></div>
+            <div class="f_tyre_r"></div>
+            <div class="b_tyre_l"></div>
+            <div class="b_tyre_r"></div>
+        </div>
+
+<!--block 2 --> 
+
+        <div id="car_2" class="car">
+            <div class="f_glass"></div>
+            <div class="b_glass"></div>
+            <div class="f_light_l"></div>
+            <div class="f_light_r"></div>
+            <div class="f_tyre_l"></div>
+            <div class="f_tyre_r"></div>
+            <div class="b_tyre_l"></div>
+            <div class="b_tyre_r"></div>
+        </div>
+
+ <!--block 3 --> 
+
+        <div id="car_3" class="car">
+            <div class="f_glass"></div>
+            <div class="b_glass"></div>
+            <div class="f_light_l"></div>
+            <div class="f_light_r"></div>
+            <div class="f_tyre_l"></div>
+            <div class="f_tyre_r"></div>
+            <div class="b_tyre_l"></div>
+            <div class="b_tyre_r"></div>
+        </div>
+
+<!-- Parametrage du bouton restart pour rejouer -->
+
+        <div id="restart_div">
+            <button id="restart">
+                Restart<br>
+                <small class="small_text">cliquez sur entrée pour rejouer</small>
+            </button>
+        </div>
+    </div> 
+
+<!-- inclusion des fichiers externe "jquery.min.js" et "script.js"-->
+
+    <script src="jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
